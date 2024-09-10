@@ -201,3 +201,8 @@ Now the DNS server is configured with the required DNS policies for either a spl
 You can create thousands of DNS policies according to your traffic management requirements, and all new policies are applied dynamically - without restarting the DNS server - on incoming queries.
 
 For more information, see [DNS Policy Scenario Guide](DNS-Policy-Scenario-Guide.md).
+
+#### <a name="bkmk_limits"></a>Limitations
+
+Note that DNS within an active directory context is used for more than only returning address queries.  If creating a policy based on interface using this method, missing domain entries will preclude active directory browsing outside of the default scope.
+
